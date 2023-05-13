@@ -12,12 +12,14 @@ public static string GetTokenFromFile(){
 
       // Parse the JSON string into a JObject
       JObject obj = JObject.Parse(json);
-            
+
+
+    //  You can assign your bot token to a string, and pass that in to connect.
+    //  This is, however, insecure, particularly if you plan to have your code hosted in a public repository.
+
       return (string)obj["token"];
 
     
-    //  You can assign your bot token to a string, and pass that in to connect.
-    //  This is, however, insecure, particularly if you plan to have your code hosted in a public repository.
-    //return "MTEwNTMyNzUzOTUyNzg4ODk0Nw.Gz60x7.bg1AUarJPMUBnx9d8gJsmCVilqOgrSTuUI4mXU";
+
 }
 }
